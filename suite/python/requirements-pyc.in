@@ -1,0 +1,5 @@
+nuitka==4.3.5
+mypy==2.4.1
+cython==3.3.1
+numba==0.68.1
+setuptools

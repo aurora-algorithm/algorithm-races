@@ -1,0 +1,11 @@
+# name  version  folder under deps/  sha256 of the download  url
+zlib            1.4          zlib-1.4                                          02dd159783677a749c04adbdd02b55b8a2bcc7e054f51b76b549199a916ad584  https://github.com/madler/zlib/releases/download/v1.4/zlib-1.4.tar.gz
+zstd            1.5.7        zstd-1.5.7                                        eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3  https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz
+pcre2           10.49        pcre2-10.49                                       929f0b20e62879252a15886b06c89f1edef61a363cbd5826fb041080a5e557ae  https://github.com/PCRE2Project/pcre2/releases/download/pcre2-10.49/pcre2-10.49.tar.gz
+mbedtls         3.6.7        mbedtls-3.6.7                                     a7e8bcbec0e6f761b4af24f25677626b35f762f68eef79c08677a363212d11f6  https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.7/mbedtls-3.6.7.tar.bz2
+cjson           1.7.19       cJSON-1.7.19                                      7fa616e3046edfa7a28a32d5f9eacfd23f92900fe1f8ccd988c1662f30454562  https://github.com/DaveGamble/cJSON/archive/refs/tags/v1.7.19.tar.gz
+argon2          20190702     phc-winner-argon2-20190702                        daf972a89577f8772602bf2eb38b6a3dd3d922bf5724d45e7f9589b5e830442c  https://github.com/P-H-C/phc-winner-argon2/archive/refs/tags/20190702.tar.gz
+crypt_blowfish  1.3          crypt_blowfish-1.3                                83fa01fca6996fe8d882b7f8e9ba0305a5664936100b01481ea3c6a8ce8d72fd  https://www.openwall.com/crypt/crypt_blowfish-1.3.tar.gz
+libcsv          3.0.3@b1d5212 libcsv-b1d5212831842ee5869d99bc208a21837e4037d5  328ccd918edeeeea52164f7c43500d3ce2f039594c0c81b0aa2e6041bce88ec4  https://github.com/rgamble/libcsv/archive/b1d5212831842ee5869d99bc208a21837e4037d5.tar.gz
+stb             image-2.32,write-1.18@9600522 stb-9600522de53973336fa033a289858a4354cbb04c  8546b1281cf61e4b5229e9eb05055d765f1b076f6ba03aab377df09a20fb613b  https://github.com/nothings/stb/archive/9600522de53973336fa033a289858a4354cbb04c.tar.gz
+stb_resize      2.50@703100c stb_image_resize-703100c5f8a0b75b4861e401db567f1d82d545b8  be0ebac1df76d3579f622780f9db48ca199ec66cc24617cee8747d492aa047a0  https://github.com/nothings/stb_image_resize/archive/703100c5f8a0b75b4861e401db567f1d82d545b8.tar.gz

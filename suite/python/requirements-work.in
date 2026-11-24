@@ -1,0 +1,6 @@
+pillow==13.0.0
+pyvips==3.2.0
+pyvips-binary==8.18.7
+bcrypt==5.0.0
+argon2-cffi==25.1.0
+polars==2.1.0

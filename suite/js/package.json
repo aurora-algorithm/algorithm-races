@@ -1,0 +1,15 @@
+{
+	"name": "kernels-js",
+	"private": true,
+	"type": "module",
+	"description": "Libraries of the work kernels (kernels/SPEC.md section 11); the other kernels use none.",
+	"dependencies": {
+		"argon2": "0.45.2",
+		"bcrypt": "6.0.0",
+		"bcryptjs": "3.0.3",
+		"csv-parse": "7.0.3",
+		"jimp": "1.6.1",
+		"papaparse": "5.7.1",
+		"sharp": "0.35.5"
+	}
+}

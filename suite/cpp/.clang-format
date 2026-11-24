@@ -1,0 +1,6 @@
+# clang-format 23.1.5 (uvx clang-format==23.1.5, pinned in kernels/runtimes.json "lint")
+BasedOnStyle: Google
+ColumnLimit: 100
+DerivePointerAlignment: false
+PointerAlignment: Left
+IncludeBlocks: Regroup

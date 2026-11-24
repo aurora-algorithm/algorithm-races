@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <IsAotCompatible>true</IsAotCompatible>
+    <AssemblyName>Kernels</AssemblyName>
+    <RootNamespace>Kernels</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Sylvan.Data.Csv (csv-alt) is a DbDataReader whose schema methods are not trim-safe; the kernel calls none of
+       them, and the quick-size checksum check would catch a trimmed-away path. Kept as a warning in NativeAOT.
+       IL3053: System.Linq.Parallel itself (PLINQ.OrderBy in the builtins group) carries AOT analysis warnings; the
+       quick-size checksums of every PLINQ kernel pass under NativeAOT. -->
+  <PropertyGroup Condition="'$(PublishAot)' == 'true'">
+    <WarningsNotAsErrors>$(WarningsNotAsErrors);IL2104;IL3053</WarningsNotAsErrors>
+  </PropertyGroup>
+
+  <!-- Libraries of the "work" kernels (kernels/SPEC.md section 11); the other kernels use none. -->
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.1" />
+    <PackageReference Include="CsvHelper" Version="34.0.0" />
+    <PackageReference Include="HPCsharp" Version="3.19.8" />
+    <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.3.1" />
+    <PackageReference Include="NetVips" Version="3.2.0" />
+    <PackageReference Include="NetVips.Native" Version="8.18.7" />
+    <PackageReference Include="SkiaSharp" Version="4.156.0" />
+    <PackageReference Include="Sylvan.Data.Csv" Version="1.4.4" />
+    <PackageReference Include="ZstdSharp.Port" Version="0.8.8" />
+  </ItemGroup>
+
+</Project>

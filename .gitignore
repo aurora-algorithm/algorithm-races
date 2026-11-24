@@ -1,0 +1,25 @@
+# Generated benchmark inputs and outputs
+suite/data/
+suite/results/
+suite/.venv*/
+__pycache__/
+*.pyc
+.DS_Store
+.ruff_cache/
+
+# Build outputs & downloaded dependencies
+suite/c/bin/
+suite/c/deps/
+suite/cpp/bin/
+suite/cpp/third_party/
+suite/rust/target/
+suite/wasm/target/
+suite/go/bin/
+suite/csharp/bin/
+suite/csharp/obj/
+suite/java/target/
+suite/js/node_modules/
+suite/engines/node_modules/
+suite/engines/dist/
+suite/goose/bin/
+suite/python/bin/

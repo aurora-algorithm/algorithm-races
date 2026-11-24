@@ -1,0 +1,12 @@
+{
+	"name": "kernels-engines",
+	"private": true,
+	"type": "module",
+	"description": "The kernels/js kernels bundled for engines without Node's APIs (kernels/engines/NOTES.md).",
+	"scripts": {
+		"build": "node build.mjs"
+	},
+	"devDependencies": {
+		"esbuild": "0.28.2"
+	}
+}

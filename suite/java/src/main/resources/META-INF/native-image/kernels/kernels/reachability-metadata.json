@@ -1,0 +1,42 @@
+{
+  "reflection": [
+    {
+      "type": "kernels.Misc$Orders",
+      "methods": [
+        {"name": "<init>", "parameterTypes": ["java.util.List"]},
+        {"name": "orders", "parameterTypes": []}
+      ]
+    },
+    {
+      "type": "kernels.Misc$Order",
+      "methods": [
+        {"name": "<init>", "parameterTypes": ["long", "long", "java.lang.String", "long", "int", "java.util.List"]},
+        {"name": "id", "parameterTypes": []},
+        {"name": "customerId", "parameterTypes": []},
+        {"name": "status", "parameterTypes": []},
+        {"name": "totalCents", "parameterTypes": []},
+        {"name": "items", "parameterTypes": []},
+        {"name": "tags", "parameterTypes": []}
+      ]
+    },
+    {"type": "java.lang.Record"},
+    {
+      "type": "java.lang.Class",
+      "methods": [
+        {"name": "getRecordComponents", "parameterTypes": []},
+        {"name": "isRecord", "parameterTypes": []}
+      ]
+    },
+    {
+      "type": "java.lang.reflect.RecordComponent",
+      "methods": [
+        {"name": "getName", "parameterTypes": []},
+        {"name": "getType", "parameterTypes": []}
+      ]
+    },
+    {
+      "type": "com.fasterxml.jackson.databind.ext.Java7SupportImpl",
+      "methods": [{"name": "<init>", "parameterTypes": []}]
+    }
+  ]
+}

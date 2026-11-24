@@ -1,0 +1,21 @@
+[package]
+name = "kernels-wasm"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+# The Rust kernels (../rust/src, unchanged, included by path) built for wasm32-wasip1. Same crates and versions as
+# ../rust/Cargo.lock, minus the "work" group's crates (zstd links C code) and the threaded kernels (no threads on
+# wasip1).
+[dependencies]
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.11"
+num-bigint = "=0.5.1"
+
+[[bin]]
+name = "kernels"
+path = "src/main.rs"
+
+[workspace]

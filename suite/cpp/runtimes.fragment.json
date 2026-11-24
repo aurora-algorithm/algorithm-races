@@ -1,0 +1,20 @@
+{
+  "langs": {
+    "cpp": {
+      "cwd": "cpp",
+      "build": "./deps.sh",
+      "lint": ["uvx clang-format==23.1.5 --dry-run --Werror src/*.cpp src/*.hpp", "./build.sh warnings"]
+    }
+  },
+  "runtimes": [
+    {"id": "cpp-msvc", "lang": "cpp", "label": "C++ MSVC", "run": ["bin/kernels-msvc{exe}"],
+     "build": "./build.sh msvc", "needs": ["CPP_VCVARS"],
+     "version": ["{env:CPP_CL|cl}"], "mt": true},
+    {"id": "cpp-clang", "lang": "cpp", "label": "C++ Clang", "run": ["bin/kernels-clang{exe}"],
+     "build": "./build.sh clang", "needs": ["CPP_CLANG"],
+     "version": ["{env:CPP_CLANG|clang++}", "--version"], "mt": true},
+    {"id": "cpp-gcc", "lang": "cpp", "label": "C++ GCC", "run": ["bin/kernels-gcc{exe}"],
+     "build": "./build.sh gcc", "needs": ["CPP_GCC"],
+     "version": ["{env:CPP_GCC|g++}", "--version"], "mt": true}
+  ]
+}
